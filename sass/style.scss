@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500&display=swap");
+
+//font
+$primary-font: "Poppins", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+
+//color
+$orange-1: #f55c4a;
+$orange-2: #fac13b;
+$navy: #242c53;
+$white: #ffffff;
+
+//page
+@mixin layoutPage($width: 85%) {
+  height: 100vh;
+  margin: 0 auto;
+  width: $width;
+}
+
+//background
+@mixin backgroundImage($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//button
+@mixin primaryButton($padding: 0.75rem 2rem) {
+  background-color: $orange-1;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.875rem;
+  padding: $padding;
+}
+
+@mixin buttonHover() {
+  background-color: $white;
+  border: thin solid $orange-1;
+  color: $orange-1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  @include layoutPage();
+}
+
+// header
+header {
+  @include backgroundImage(url(../assets/bg-header.svg));
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $orange-1;
+        // font-size: 0.875rem;
+        margin: 0 1.25rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .jumbotron {
+    height: 92vh;
+    &-head {
+      flex: 50%;
+      &-text {
+        .lead {
+          color: $orange-2;
+        }
+
+        h1 {
+          color: $orange-1;
+          font-size: 4.5rem;
+          font-weight: 500;
+          text-transform: uppercase;
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      .btn-primary {
+        @include primaryButton();
+      }
+
+      .btn-primary:hover {
+        @include buttonHover();
+      }
+    }
+
+    &-image {
+      flex: 50%;
+      img {
+        width: 100%;
+      }
+      .social-media {
+        i {
+          cursor: pointer;
+          color: $white;
+          font-size: 1.5rem;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+//main - about
+.about {
+  @include backgroundImage(url(../assets/bg-about-me.svg));
+
+  &-image {
+    flex: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    flex: 50%;
+    padding: 4rem;
+    text-align: center;
+
+    &-text {
+      h3 {
+        color: $orange-1;
+        font-weight: 700;
+        text-align: justify;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-family: $secondary-font;
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-btn {
+      .btn-primary {
+        @include primaryButton();
+      }
+
+      .btn-primary:hover {
+        @include buttonHover();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper {
+    @include layoutPage(95%);
+  }
+
+  //header
+  header {
+    // .navbar-nav {
+    //   .nav-item {
+    //     .nav-link {
+    //       // background-color: $orange-1;
+    //       // color: $white;
+    //       // font-size: 0.875rem;
+    //       // margin: 0 1.25rem;
+    //       // text-transform: uppercase;
+    //     }
+    //   }
+    // }
+
+    .jumbotron {
+      flex-direction: column;
+
+      &-head {
+        flex: 100%;
+        order: 2;
+        &-text {
+          .lead {
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 2.25rem;
+          }
+        }
+
+        .btn-primary {
+          @include primaryButton(0.5rem 0);
+          width: 100%;
+        }
+      }
+
+      &-image {
+        flex: 100%;
+        order: 1;
+        img {
+          width: 88%;
+        }
+        .social-media {
+          i {
+            cursor: pointer;
+            color: $white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
