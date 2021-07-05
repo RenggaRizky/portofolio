@@ -1,73 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500&display=swap");
 
-// //font
-// $primary-font: "Poppins", sans-serif;
-// $secondary-font: "Open Sans", sans-serif;
-
-// //color
-// $navy: #242c53;
-// $orange-1: #f55c4a;
-// $orange-2: #fac13b;
-// $white: #ffffff;
-
-// //page
-// @mixin layoutPage($width: 85%) {
-//   height: 100vh;
-//   margin: 0 auto;
-//   width: $width;
-// }
-
-// //background
-// @mixin backgroundImage($url) {
-//   background-image: $url;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// //button
-// @mixin primaryButton($width: 100%) {
-//   background-color: $orange-1;
-//   border: none;
-//   border-radius: 25px;
-//   font-size: 0.875rem;
-//   width: $width;
-// }
-
-// @mixin buttonHover() {
-//   background-color: $white;
-//   border: thin solid $orange-1;
-//   color: $orange-1;
-// }
-
-// * {
-//   box-sizing: border-box;
-//   font-family: $primary-font;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .wrapper {
-//   @include layoutPage();
-// }
-
-// body {
-//   background-color: $navy;
-
-//   .navbar-nav {
-//     .nav-item {
-//       &-link {
-//         // color: $primary;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 769px) {
-//   .wrapper {
-//     @include layoutPage(90%);
-//   }
-// }
-
 //colors
 $primary: #f55c4a;
 $secondary: #242c53;
@@ -79,7 +11,6 @@ $body-bg: $secondary;
 $body-color: $primary;
 $theme-colors: (
   "primary": $primary,
-  //"danger": $danger,
 );
 $page-width: 85%;
 $page-width-mb: 90%;
@@ -101,8 +32,6 @@ $lead-font-size: 1.5rem;
 $btn-font-size: 1rem;
 $btn-font-size-sm: 1rem;
 $btn-font-size-lg: 1rem;
-// $btn-border-radius: 25px;
-//$btn-border-radius-sm: 25px;
 $btn-border-radius-lg: 25px;
 
 @mixin btnHover() {
@@ -218,6 +147,49 @@ header {
   }
 }
 
+//main - contact
+#contact {
+  height: $height-section;
+  .contact-content {
+    .contact-img {
+      img {
+        width: 75%;
+        margin: 0 auto;
+      }
+      .social-media {
+        i {
+          color: $primary;
+          font-size: 1.875rem;
+        }
+      }
+    }
+    .contact-text {
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .contact-icon {
+        margin: 0.5rem 1rem 0.5rem 0;
+        width: 10%;
+      }
+
+      p {
+        margin: auto 0;
+      }
+    }
+  }
+}
+
+// footer
+#footer {
+  background-color: $primary;
+
+  p {
+    color: $secondary;
+  }
+}
+
 //mobile
 @include media-breakpoint-down(md) {
   .wrapper {
@@ -276,7 +248,7 @@ header {
   }
 
   //main - about me
-  #about-me {
+  #aboutMe {
     width: $page-width-mb;
     .about-me-content {
       flex-direction: column;

@@ -10757,6 +10757,42 @@ header .social-media i {
   width: 100%;
 }
 
+#contact {
+  height: 100vh;
+}
+
+#contact .contact-content .contact-img img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#contact .contact-content .contact-img .social-media i {
+  color: #f55c4a;
+  font-size: 1.875rem;
+}
+
+#contact .contact-content .contact-text h5, #contact .contact-content .contact-text .h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#contact .contact-content .contact-text .contact-icon {
+  margin: 0.5rem 1rem 0.5rem 0;
+  width: 10%;
+}
+
+#contact .contact-content .contact-text p {
+  margin: auto 0;
+}
+
+#footer {
+  background-color: #f55c4a;
+}
+
+#footer p {
+  color: #242c53;
+}
+
 @media (max-width: 767.98px) {
   .wrapper {
     width: 90%;
@@ -10806,37 +10842,37 @@ header .social-media i {
   header .social-media i {
     display: none;
   }
-  #about-me {
+  #aboutMe {
     width: 90%;
   }
-  #about-me .about-me-content {
+  #aboutMe .about-me-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 1rem;
   }
-  #about-me .about-me-content .about-me-img {
+  #aboutMe .about-me-content .about-me-img {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     margin-bottom: 2rem;
   }
-  #about-me .about-me-content .about-me-text {
+  #aboutMe .about-me-content .about-me-text {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     padding: 0;
   }
-  #about-me .about-me-content .about-me-text h4, #about-me .about-me-content .about-me-text .h4 {
+  #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
     color: #ffffff;
     font-size: 0.875rem;
     text-align: justify;
   }
-  #about-me .about-me-content .about-me-text p {
+  #aboutMe .about-me-content .about-me-text p {
     display: none;
   }
-  #about-me .about-me-content .about-me-text .btn {
+  #aboutMe .about-me-content .about-me-text .btn {
     margin: 2rem 0 0 0;
     width: 100%;
   }
