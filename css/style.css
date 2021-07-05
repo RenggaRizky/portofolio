@@ -10754,6 +10754,7 @@ header .social-media i {
 }
 
 #skillsAndProjects .projects-content img {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -10782,6 +10783,8 @@ header .social-media i {
 }
 
 #contact .contact-content .contact-text p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   margin: auto 0;
 }
 
@@ -10793,11 +10796,7 @@ header .social-media i {
   color: #242c53;
 }
 
-@media (max-width: 767.98px) {
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
+@media (max-width: 991.98px) {
   .navbar-nav .nav-link {
     text-align: center;
   }
@@ -10817,11 +10816,14 @@ header .social-media i {
             order: 2;
   }
   header .jumbotron .jumbotron-content .jumbotron-text .lead {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
   header .jumbotron .jumbotron-content .jumbotron-text h1, header .jumbotron .jumbotron-content .jumbotron-text .h1 {
-    font-size: 2.25rem;
+    font-size: 3rem;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text span {
+    display: inline !important;
   }
   header .jumbotron .jumbotron-content .jumbotron-text .btn {
     width: 100%;
@@ -10841,9 +10843,6 @@ header .social-media i {
   }
   header .social-media i {
     display: none;
-  }
-  #aboutMe {
-    width: 90%;
   }
   #aboutMe .about-me-content {
     -webkit-box-orient: vertical;
@@ -10865,15 +10864,14 @@ header .social-media i {
     padding: 0;
   }
   #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
-    color: #ffffff;
-    font-size: 0.875rem;
-    text-align: justify;
+    color: #f55c4a;
+    font-size: 1.125rem;
   }
   #aboutMe .about-me-content .about-me-text p {
-    display: none;
+    font-size: 0.875rem;
   }
   #aboutMe .about-me-content .about-me-text .btn {
-    margin: 2rem 0 0 0;
+    margin-top: 0.75rem;
     width: 100%;
   }
   #skillsAndProjects .icon-top {
@@ -10897,6 +10895,62 @@ header .social-media i {
   }
   #skillsAndProjects .icon-btm img {
     width: 30%;
+  }
+  #skillsAndProjects .projects-content img {
+    width: 100%;
+  }
+  #contact .contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact .contact-content .contact-img .social-media i {
+    font-size: 1.375rem;
+  }
+  #contact .contact-content .contact-text {
+    margin: 0 auto;
+  }
+  #contact .contact-content .contact-text h5, #contact .contact-content .contact-text .h5 {
+    font-size: 1.125rem;
+  }
+  #contact .contact-content .contact-text .email p,
+  #contact .contact-content .contact-text .telephone p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text .lead {
+    font-size: 1.125rem;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text h1, header .jumbotron .jumbotron-content .jumbotron-text .h1 {
+    font-size: 2.25rem;
+  }
+  #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
+    color: #ffffff;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  #aboutMe .about-me-content .about-me-text p {
+    display: none;
+  }
+  #aboutMe .about-me-content .about-me-text .btn {
+    margin: 2rem 0 0 0;
+  }
+  #contact .contact-text h5, #contact .contact-text .h5 {
+    font-size: 0.875rem;
+  }
+  #contact .contact-text .email p,
+  #contact .contact-text .telephone p {
+    font-size: 0.75rem;
+  }
+  #footer p {
+    font-size: 0.75rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
