@@ -10800,12 +10800,14 @@ header .social-media i {
   .navbar-nav .nav-link {
     text-align: center;
   }
+  header .jumbotron {
+    padding-top: 3rem;
+  }
   header .jumbotron .jumbotron-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 1rem;
   }
   header .jumbotron .jumbotron-content .jumbotron-text {
     -webkit-box-flex: 100%;
@@ -10822,24 +10824,19 @@ header .social-media i {
   header .jumbotron .jumbotron-content .jumbotron-text h1, header .jumbotron .jumbotron-content .jumbotron-text .h1 {
     font-size: 3rem;
   }
-  header .jumbotron .jumbotron-content .jumbotron-text span {
-    display: inline !important;
+  header .jumbotron .jumbotron-content .jumbotron-text h1 span, header .jumbotron .jumbotron-content .jumbotron-text .h1 span {
+    display: inline;
   }
   header .jumbotron .jumbotron-content .jumbotron-text .btn {
     width: 100%;
   }
   header .jumbotron .jumbotron-content .jumbotron-image {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   header .jumbotron .jumbotron-content .jumbotron-image img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   header .social-media i {
     display: none;
@@ -10849,29 +10846,25 @@ header .social-media i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 1rem;
   }
   #aboutMe .about-me-content .about-me-img {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    margin-bottom: 2rem;
   }
   #aboutMe .about-me-content .about-me-text {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
-    padding: 0;
+    padding: 2rem 0 0 0;
   }
   #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
-    color: #f55c4a;
     font-size: 1.125rem;
   }
   #aboutMe .about-me-content .about-me-text p {
     font-size: 0.875rem;
   }
   #aboutMe .about-me-content .about-me-text .btn {
-    margin-top: 0.75rem;
     width: 100%;
   }
   #skillsAndProjects .icon-top {
@@ -10891,12 +10884,13 @@ header .social-media i {
   }
   #skillsAndProjects .icon-top .icon-top-a img,
   #skillsAndProjects .icon-top .icon-top-b img {
-    width: 30%;
+    width: 27%;
   }
   #skillsAndProjects .icon-btm img {
-    width: 30%;
+    width: 27%;
   }
   #skillsAndProjects .projects-content img {
+    cursor: pointer;
     width: 100%;
   }
   #contact .contact-content {
@@ -10905,52 +10899,14 @@ header .social-media i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #contact .contact-content .contact-img .social-media i {
-    font-size: 1.375rem;
+  #contact .contact-content .contact-img img {
+    width: 80%;
   }
   #contact .contact-content .contact-text {
-    margin: 0 auto;
+    padding: 3rem;
   }
-  #contact .contact-content .contact-text h5, #contact .contact-content .contact-text .h5 {
-    font-size: 1.125rem;
-  }
-  #contact .contact-content .contact-text .email p,
-  #contact .contact-content .contact-text .telephone p {
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .wrapper {
-    width: 90%;
-    margin: 0 auto;
-  }
-  header .jumbotron .jumbotron-content .jumbotron-text .lead {
-    font-size: 1.125rem;
-  }
-  header .jumbotron .jumbotron-content .jumbotron-text h1, header .jumbotron .jumbotron-content .jumbotron-text .h1 {
-    font-size: 2.25rem;
-  }
-  #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
-    color: #ffffff;
-    font-size: 0.875rem;
-    text-align: justify;
-  }
-  #aboutMe .about-me-content .about-me-text p {
-    display: none;
-  }
-  #aboutMe .about-me-content .about-me-text .btn {
-    margin: 2rem 0 0 0;
-  }
-  #contact .contact-text h5, #contact .contact-text .h5 {
-    font-size: 0.875rem;
-  }
-  #contact .contact-text .email p,
-  #contact .contact-text .telephone p {
-    font-size: 0.75rem;
-  }
-  #footer p {
-    font-size: 0.75rem;
+  #contact .contact-content .contact-text .contact-icon {
+    width: 8%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -199,9 +199,9 @@ header {
   // header
   header {
     .jumbotron {
+      padding-top: 3rem;
       .jumbotron-content {
         flex-direction: column;
-        margin-top: 1rem;
         .jumbotron-text {
           flex: 100%;
           order: 2;
@@ -212,10 +212,10 @@ header {
 
           h1 {
             font-size: 3rem;
-          }
 
-          span {
-            display: inline !important;
+            span {
+              display: inline;
+            }
           }
 
           .btn {
@@ -224,12 +224,9 @@ header {
         }
 
         .jumbotron-image {
-          flex: 100%;
           order: 1;
-
           img {
             width: 100%;
-            object-fit: cover;
           }
         }
       }
@@ -246,19 +243,15 @@ header {
   #aboutMe {
     .about-me-content {
       flex-direction: column;
-      margin-top: 1rem;
-
       .about-me-img {
         flex: 100%;
-        margin-bottom: 2rem;
       }
 
       .about-me-text {
         flex: 100%;
-        padding: 0;
+        padding: 2rem 0 0 0;
 
         h4 {
-          color: $primary;
           font-size: 1.125rem;
         }
 
@@ -267,7 +260,6 @@ header {
         }
 
         .btn {
-          margin-top: 0.75rem;
           width: 100%;
         }
       }
@@ -284,19 +276,19 @@ header {
         display: flex;
         justify-content: center;
         img {
-          width: 30%;
+          width: 27%;
         }
       }
     }
 
     .icon-btm {
       img {
-        width: 30%;
+        width: 27%;
       }
     }
-
     .projects-content {
       img {
+        cursor: pointer;
         width: 100%;
       }
     }
@@ -307,93 +299,25 @@ header {
     .contact-content {
       flex-direction: column;
       .contact-img {
-        .social-media {
-          i {
-            font-size: 1.375rem;
-          }
+        img {
+          width: 80%;
         }
       }
       .contact-text {
-        margin: 0 auto;
-        h5 {
-          font-size: 1.125rem;
-        }
+        padding: 3rem;
 
-        .email,
-        .telephone {
-          p {
-            font-size: 0.875rem;
-          }
+        .contact-icon {
+          width: 8%;
         }
       }
     }
   }
 }
 
-//mobile
+//landscape phones
 @include media-breakpoint-down(md) {
-  .wrapper {
-    width: $page-width-mb;
-    margin: 0 auto;
-  }
+}
 
-  // header
-  header {
-    .jumbotron {
-      .jumbotron-content {
-        .jumbotron-text {
-          .lead {
-            font-size: 1.125rem;
-          }
-
-          h1 {
-            font-size: 2.25rem;
-          }
-        }
-      }
-    }
-  }
-
-  //main - about me
-  #aboutMe {
-    .about-me-content {
-      .about-me-text {
-        h4 {
-          color: $white;
-          font-size: 0.875rem;
-          text-align: justify;
-        }
-
-        p {
-          display: none;
-        }
-
-        .btn {
-          margin: 2rem 0 0 0;
-        }
-      }
-    }
-  }
-
-  //main - contact
-  #contact {
-    .contact-text {
-      h5 {
-        font-size: 0.875rem;
-      }
-
-      .email,
-      .telephone {
-        p {
-          font-size: 0.75rem;
-        }
-      }
-    }
-  }
-
-  #footer {
-    p {
-      font-size: 0.75rem;
-    }
-  }
+//portrait phones
+@include media-breakpoint-down(sm) {
 }

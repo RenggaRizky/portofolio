@@ -1,0 +1,382 @@
+//tablet
+@include media-breakpoint-down(lg) {
+  // navbar
+  .navbar-nav {
+    .nav-link {
+      text-align: center;
+    }
+  }
+
+  // header
+  // header {
+  //
+  //   .jumbotron {
+  //     .jumbotron-content {
+  //       flex-direction: column;
+  //       margin-top: 1rem;
+  //       .jumbotron-text {
+  //         flex: 100%;
+  //         order: 2;
+  //         .lead {
+  //           font-size: 1.25rem;
+  //           font-weight: 300;
+  //         }
+
+  //         h1 {
+  //           font-size: 3rem;
+  //         }
+
+  //         span {
+  //           display: inline !important;
+  //         }
+
+  //         .btn {
+  //           width: 100%;
+  //         }
+  //       }
+
+  //       .jumbotron-image {
+  //         flex: 100%;
+  //         order: 1;
+
+  //         img {
+  //           width: 100%;
+  //           object-fit: cover;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   .social-media {
+  //     i {
+  //       display: none;
+  //     }
+  //   }
+  // }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    .jumbotron {
+      .jumbotron-content {
+        margin-top: 1rem;
+        .jumbotron-text {
+          flex: 50%;
+          .lead {
+            font-size: 1.25rem;
+            font-weight: 300;
+          }
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          span {
+            display: inline !important;
+          }
+
+          .btn {
+            width: 100%;
+          }
+        }
+
+        .jumbotron-image {
+          flex: 50%;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      i {
+        display: none;
+      }
+    }
+  }
+
+  //main - about me
+  // #aboutMe {
+  //   .about-me-content {
+  //     flex-direction: column;
+  //     margin-top: 1rem;
+
+  //     .about-me-img {
+  //       flex: 100%;
+  //       margin-bottom: 2rem;
+  //     }
+
+  //     .about-me-text {
+  //       flex: 100%;
+  //       padding: 0;
+
+  //       h4 {
+  //         color: $primary;
+  //         font-size: 1.125rem;
+  //       }
+
+  //       p {
+  //         font-size: 0.875rem;
+  //       }
+
+  //       .btn {
+  //         margin-top: 0.75rem;
+  //         width: 100%;
+  //       }
+  //     }
+  //   }
+  // }
+
+  //main - skills and projects
+  // #skillsAndProjects {
+  //   .icon-top {
+  //     flex-direction: column;
+
+  //     .icon-top-a,
+  //     .icon-top-b {
+  //       display: flex;
+  //       justify-content: center;
+  //       img {
+  //         width: 30%;
+  //       }
+  //     }
+  //   }
+
+  //   .icon-btm {
+  //     img {
+  //       width: 30%;
+  //     }
+  //   }
+
+  //   .projects-content {
+  //     img {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
+
+  //main - contact
+  // #contact {
+  //   .contact-content {
+  //     flex-direction: column;
+  //     .contact-img {
+  //       .social-media {
+  //         i {
+  //           font-size: 1.375rem;
+  //         }
+  //       }
+  //     }
+  //     .contact-text {
+  //       margin: 0 auto;
+  //       h5 {
+  //         font-size: 1.125rem;
+  //       }
+
+  //       .email,
+  //       .telephone {
+  //         p {
+  //           font-size: 0.875rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+//mobile
+@include media-breakpoint-down(md) {
+  .wrapper {
+    width: $page-width-mb;
+    margin: 0 auto;
+  }
+
+  // // header
+  // header {
+  //   .jumbotron {
+  //     .jumbotron-content {
+  //       .jumbotron-text {
+  //         .lead {
+  //           font-size: 1.125rem;
+  //         }
+
+  //         h1 {
+  //           font-size: 2.25rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // header
+  header {
+    height: $height-section;
+    .jumbotron {
+      .jumbotron-content {
+        flex-direction: column;
+        margin-top: 1rem;
+        .jumbotron-text {
+          flex: 100%;
+          order: 2;
+          .lead {
+            font-size: 1.125rem;
+            font-weight: 300;
+          }
+
+          h1 {
+            font-size: 2.25rem;
+          }
+
+          .btn {
+            width: 100%;
+          }
+        }
+
+        .jumbotron-image {
+          flex: 100%;
+          order: 1;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .social-media {
+      i {
+        display: none;
+      }
+    }
+  }
+
+  // //main - about me
+  // #aboutMe {
+  //   .about-me-content {
+  //     .about-me-text {
+  //       h4 {
+  //         color: $white;
+  //         font-size: 0.875rem;
+  //         text-align: justify;
+  //       }
+
+  //       p {
+  //         display: none;
+  //       }
+
+  //       .btn {
+  //         margin: 2rem 0 0 0;
+  //       }
+  //     }
+  //   }
+  // }
+
+  #aboutMe {
+    height: $height-section;
+    .about-me-content {
+      flex-direction: column;
+      margin-top: 1rem;
+
+      .about-me-img {
+        flex: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .about-me-text {
+        flex: 100%;
+        padding: 0;
+
+        h4 {
+          color: $white;
+          font-size: 0.875rem;
+          text-align: justify;
+        }
+
+        p {
+          display: none;
+        }
+
+        .btn {
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //main - skills and projects
+  #skillsAndProjects {
+    height: $height-section;
+    .icon-top {
+      flex-direction: column;
+
+      .icon-top-a,
+      .icon-top-b {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .icon-btm {
+      img {
+        width: 30%;
+      }
+    }
+
+    .projects-content {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  //main - contact
+  // #contact {
+  //   .contact-text {
+  //     h5 {
+  //       font-size: 0.875rem;
+  //     }
+
+  //     .email,
+  //     .telephone {
+  //       p {
+  //         font-size: 0.75rem;
+  //       }
+  //     }
+  //   }
+  // }
+
+  #contact {
+    height: $height-section;
+    .contact-content {
+      flex-direction: column;
+
+      .contact-text {
+        margin: 0 auto;
+        h5 {
+          font-size: 0.875rem;
+        }
+
+        .email,
+        .telephone {
+          p {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
