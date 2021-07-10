@@ -15,6 +15,7 @@ $theme-colors: (
 $page-width: 85%;
 $page-width-mb: 90%;
 $height-section: 100vh;
+$height-section-mb: 100%;
 
 //navbar
 $navbar-dark-color: $primary;
@@ -49,6 +50,12 @@ $btn-border-radius-lg: 25px;
 
 .btn {
   color: $secondary;
+}
+
+//navbar
+// navbar
+.navbar {
+  padding: 1rem;
 }
 
 // header
@@ -316,6 +323,122 @@ header {
 
 //landscape phones
 @include media-breakpoint-down(md) {
+  .wrapper {
+    width: $page-width-mb;
+    margin: 0 auto;
+  }
+
+  //navbar
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  //header
+  header {
+    height: $height-section-mb;
+    .jumbotron {
+      .jumbotron-content {
+        .jumbotron-text {
+          .lead {
+            font-size: 1.125rem;
+          }
+
+          h1 {
+            font-size: 2.25rem;
+
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //main - about me
+  #aboutMe {
+    height: $height-section-mb;
+    .about-me-content {
+      .about-me-text {
+        padding: 2rem 0 0 0;
+
+        h4 {
+          color: $white;
+          font-size: 0.875rem;
+          text-align: justify;
+        }
+
+        p {
+          display: none;
+        }
+
+        .btn {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  //main - skills and projects
+  #skillsAndProjects {
+    height: $height-section-mb;
+    .icon-top {
+      .icon-top-a,
+      .icon-top-b {
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .icon-btm {
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  //main - contact
+  #contact {
+    height: $height-section-mb;
+    .contact-content {
+      .contact-img {
+        .social-media {
+          i {
+            font-size: 1.5rem;
+          }
+        }
+        img {
+          width: 75%;
+          margin: 0 auto;
+        }
+      }
+      .contact-text {
+        padding: 1rem;
+
+        h5 {
+          font-size: 0.875rem;
+        }
+
+        .email,
+        .telephone {
+          p {
+            font-size: 0.75rem;
+          }
+        }
+
+        .contact-icon {
+          width: 10%;
+        }
+      }
+    }
+  }
+
+  #footer {
+    p {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 //portrait phones

@@ -10665,6 +10665,10 @@ fieldset:disabled .btn {
   color: #242c53;
 }
 
+.navbar {
+  padding: 1rem;
+}
+
 header {
   height: 100vh;
 }
@@ -10907,6 +10911,81 @@ header .social-media i {
   }
   #contact .contact-content .contact-text .contact-icon {
     width: 8%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar {
+    padding: 0.5rem;
+  }
+  header {
+    height: 100%;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text .lead {
+    font-size: 1.125rem;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text h1, header .jumbotron .jumbotron-content .jumbotron-text .h1 {
+    font-size: 2.25rem;
+  }
+  header .jumbotron .jumbotron-content .jumbotron-text h1 span, header .jumbotron .jumbotron-content .jumbotron-text .h1 span {
+    display: inline;
+  }
+  #aboutMe {
+    height: 100%;
+  }
+  #aboutMe .about-me-content .about-me-text {
+    padding: 2rem 0 0 0;
+  }
+  #aboutMe .about-me-content .about-me-text h4, #aboutMe .about-me-content .about-me-text .h4 {
+    color: #ffffff;
+    font-size: 0.875rem;
+    text-align: justify;
+  }
+  #aboutMe .about-me-content .about-me-text p {
+    display: none;
+  }
+  #aboutMe .about-me-content .about-me-text .btn {
+    margin-top: 2rem;
+  }
+  #skillsAndProjects {
+    height: 100%;
+  }
+  #skillsAndProjects .icon-top .icon-top-a img,
+  #skillsAndProjects .icon-top .icon-top-b img {
+    width: 30%;
+  }
+  #skillsAndProjects .icon-btm img {
+    width: 30%;
+  }
+  #contact {
+    height: 100%;
+  }
+  #contact .contact-content .contact-img .social-media i {
+    font-size: 1.5rem;
+  }
+  #contact .contact-content .contact-img img {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #contact .contact-content .contact-text {
+    padding: 1rem;
+  }
+  #contact .contact-content .contact-text h5, #contact .contact-content .contact-text .h5 {
+    font-size: 0.875rem;
+  }
+  #contact .contact-content .contact-text .email p,
+  #contact .contact-content .contact-text .telephone p {
+    font-size: 0.75rem;
+  }
+  #contact .contact-content .contact-text .contact-icon {
+    width: 10%;
+  }
+  #footer p {
+    font-size: 0.75rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
