@@ -141,12 +141,12 @@ header {
 #skillsAndProjects {
   height: $height-section;
 
-  .projects-content {
-    img {
-      cursor: pointer;
-      width: 100%;
-    }
-  }
+  // .projects-content {
+  //   img {
+  //     cursor: pointer;
+  //     width: 100%;
+  //   }
+  // }
 }
 
 //main - contact
@@ -293,12 +293,12 @@ header {
         width: 27%;
       }
     }
-    .projects-content {
-      img {
-        cursor: pointer;
-        width: 100%;
-      }
-    }
+    // .projects-content {
+    //   img {
+    //     cursor: pointer;
+    //     width: 100%;
+    //   }
+    // }
   }
 
   //main - contact
@@ -321,7 +321,7 @@ header {
   }
 }
 
-//landscape phones
+// phones
 @include media-breakpoint-down(md) {
   .wrapper {
     width: $page-width-mb;
@@ -439,8 +439,4 @@ header {
       font-size: 0.75rem;
     }
   }
-}
-
-//portrait phones
-@include media-breakpoint-down(sm) {
 }

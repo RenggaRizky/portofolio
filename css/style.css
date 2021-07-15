@@ -10757,11 +10757,6 @@ header .social-media i {
   height: 100vh;
 }
 
-#skillsAndProjects .projects-content img {
-  cursor: pointer;
-  width: 100%;
-}
-
 #contact {
   height: 100vh;
 }
@@ -10892,10 +10887,6 @@ header .social-media i {
   }
   #skillsAndProjects .icon-btm img {
     width: 27%;
-  }
-  #skillsAndProjects .projects-content img {
-    cursor: pointer;
-    width: 100%;
   }
   #contact .contact-content {
     -webkit-box-orient: vertical;
